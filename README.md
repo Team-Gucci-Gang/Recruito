@@ -1,7 +1,7 @@
 <p align="center">
   <img src="./public/images/logo/logo.png" width="200" alt="Logo">
 
-  <h3 align="center">Apply-by-AI</h3>
+  <h3 align="center">Increasing Inclusion</h3>
   <p align="center">
     Looking for candidates that rightly match your job requirements?
     Let AI handle it for you.
@@ -19,9 +19,9 @@
     talent for your pipeline.
     <br>
     <br>
-    <a href="https://github.com/und3fined-v01d/apply-by-ai/issues">Report Bug</a>
+    <a href="https://github.com/Team-Gucci-Gang/Increasing-Inclusion/issues">Report Bug</a>
     ·
-    <a href="https://github.com/und3fined-v01d/apply-by-ai/issues">Submit Feature</a>
+    <a href="https://github.com/Team-Gucci-Gang/Increasing-Inclusion/issues">Submit Feature</a>
   </p>
 </p>
 
@@ -30,7 +30,7 @@
 ## Table of Contents
 
 - [About the Project](#about-the-project)
-  - [Set Up](https://github.com/SmartPracticeschool/SBSPS-Challenge-875-AI-Recruiter-Shortlist-a-Suitable-candidate-for-specific-Job-Role/blob/master/DEVELOPERS.md)
+  - [Set Up](https://github.com/Team-Gucci-Gang/Increasing-Inclusion/blob/master/DEVELOPERS.md)
   - [Features](#features)
   - [Contributors](#contributors)
 
@@ -58,5 +58,3 @@ Technical candidates love our platform. Apply-by-AI is not just fast, it is way 
 
 - [Soham Parekh](https://github.com/und3fined-v01d)
 - [Vidhi Mody](https://github.com/vidhi-mody)
-- [Vrushti Mody](https://github.com/vrushti-mody)
-- [Darshee Machhar](https://github.com/darshee-m)
