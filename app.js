@@ -69,12 +69,12 @@ app.use(passport.initialize())
 const date = new Date()
 app.events = [
   {
-    title: 'Apply-by-AI',
-    text: 'Think Recruitment? Think Apply-by-AI !',
+    title: 'Recruito',
+    text: 'Think Recruitment? Think Recruito !',
     img: '/images/4-large.png',
     time: [date, date.setDate(date.getDate() + 1)],
     link: {
-      link_url: 'https://github.com/und3fined-v01d/apply-by-ai',
+      link_url: 'https://github.com/und3fined-v01d/recruito',
       link_text: 'Visit'
     }
   }

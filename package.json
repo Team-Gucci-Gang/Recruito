@@ -1,5 +1,5 @@
 {
-  "name": "apply-by-ai",
+  "name": "recruito",
   "version": "1.0.0",
   "description": "AI recruitment platform",
   "scripts": {
@@ -13,14 +13,14 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/und3fined-v01d/apply-by-ai.git"
+    "url": "git+https://github.com/und3fined-v01d/recruito.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/und3fined-v01d/apply-by-ai/issues"
+    "url": "https://github.com/und3fined-v01d/recruito/issues"
   },
-  "homepage": "https://github.com/und3fined-v01d/apply-by-ai#readme",
+  "homepage": "https://github.com/und3fined-v01d/recruito#readme",
   "dependencies": {
     "apikeygen": "1.1.0",
     "array-tools": "2.0.9",

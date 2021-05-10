@@ -1,9 +1,9 @@
 require('dotenv').config()
-const dbHost = process.env.DBHOST || 'mongodb://localhost:27017/apply-by-ai'
+const dbHost = process.env.DBHOST || 'mongodb://localhost:27017/recruito'
 
 module.exports = {
-  name: 'apply-by-ai',
-  title: 'Apply-by-AI',
+  name: 'recruito',
+  title: 'Recruito',
   http: {
     host: process.env.HOST || 'localhost',
     port: process.env.PORT || 80

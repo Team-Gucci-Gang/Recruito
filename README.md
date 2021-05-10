@@ -52,7 +52,7 @@ Our platform lets you filter developers by basic technical skills that developer
 
 #### 3. Applicant approved
 
-Technical candidates love our platform. Apply-by-AI is not just fast, it is way more fun than sending plain emails. We understand the tedious part of uploading a resume and managing one and help you offload it to your platform.
+Technical candidates love our platform. Recruito is not just fast, it is way more fun than sending plain emails. We understand the tedious part of uploading a resume and managing one and help you offload it to your platform.
 
 ### Contributors
 

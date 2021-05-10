@@ -49,7 +49,7 @@ const User = mongoose.Schema({
       website: String,
       summary: {
         type: String,
-        default: 'Connect with me on Apply-by-AI'
+        default: 'Connect with me on Recruito'
       },
       location: {
         address: String,
