@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./public/images/logo/logo.png" width="200" alt="Logo">
+  <img src="https://www.peoplex.ai/wp-content/uploads/2019/07/banner-recruitment.png" width="200" alt="Logo">
 
   <h3 align="center">Increasing Inclusion</h3>
   <p align="center">
