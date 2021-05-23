@@ -1,26 +1,26 @@
 # Setting up and running the app on your machine
 
-This document describes how to set up your development environment to run and test Apply-by-AI.
+This document describes how to set up your development environment to run and test Recruito.
 It also explains the basic mechanics of using `git`, `node`.
 
-* [Prerequisite Software](#prerequisite-software)
-* [Getting the Sources](#getting-the-sources)
-* [Installing NPM Modules](#installing-npm-modules)
-* [Spinnng up the Database](#spinnng-up-the-database)
-* [Setting up environment variables](#setting-up-the-environment-variables)
-* [Starting the server](#starting-the-server)
+- [Prerequisite Software](#prerequisite-software)
+- [Getting the Sources](#getting-the-sources)
+- [Installing NPM Modules](#installing-npm-modules)
+- [Spinnng up the Database](#spinnng-up-the-database)
+- [Setting up environment variables](#setting-up-the-environment-variables)
+- [Starting the server](#starting-the-server)
 
 ## Prerequisite Software
 
-Before you can run and test Apply-by-AI, you must install and configure the
+Before you can run and test Recruito, you must install and configure the
 following products on your development machine:
 
-* [Git](http://git-scm.com) and/or the **GitHub app** (for [Mac](http://mac.github.com) or
+- [Git](http://git-scm.com) and/or the **GitHub app** (for [Mac](http://mac.github.com) or
   [Windows](http://windows.github.com)); [GitHub's Guide to Installing
   Git](https://help.github.com/articles/set-up-git) is a good source of information.
-* [Node.js](http://nodejs.org), (version specified in the engines field of [`package.json`](../package.json)) which is used to run a development web server,
+- [Node.js](http://nodejs.org), (version specified in the engines field of [`package.json`](../package.json)) which is used to run a development web server,
   run tests, and generate distributable files.
-* [MongoDB](https://docs.mongodb.com/manual/installation/) which is used as a NoSQL database.
+- [MongoDB](https://docs.mongodb.com/manual/installation/) which is used as a NoSQL database.
 
 ## Getting the Sources
 
@@ -28,19 +28,19 @@ Fork and clone the repository:
 
 1. Login to your GitHub account or create one by following the instructions given
    [here](https://github.com/signup/free).
-2. [Fork](http://help.github.com/forking) the [main repository](https://github.com/und3fined-v01d/apply-by-ai).
+2. [Fork](http://help.github.com/forking) the [main repository](https://github.com/und3fined-v01d/recruito).
 3. Clone your fork of the repository and define an `upstream` remote pointing back to
-   the Apply-by-AI repository that you forked in the first place.
+   the Recruito repository that you forked in the first place.
 
 ```shell
 # Clone your GitHub repository:
-git clone git@github.com:<github username>/apply-by-ai.git
+git clone git@github.com:<github username>/recruito.git
 
-# Go to the Apply-by-AI directory:
-cd apply-by-ai
+# Go to the Recruito directory:
+cd recruito
 
 # Add the main repository as an upstream remote to your repository:
-git remote add upstream https://github.com/und3fined-v01d/apply-by-ai.git
+git remote add upstream https://github.com/und3fined-v01d/recruito.git
 ```
 
 ## Installing NPM Modules

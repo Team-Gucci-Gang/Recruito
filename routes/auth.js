@@ -247,11 +247,15 @@ router.post('/new/company/info', formParser, async (req, res, next) => {
 
   const newpath = path.join(__dirname, '..', 'public', 'company', `${username}_${randomId}_${req.files.logo.name}`)
 
-  mv(oldpath, newpath, (error) => {
-    if (error) {
-      console.log(error)
-    }
-  })
+  await new Promise((resolve, reject) => {
+    mv(oldpath, newpath, { mkdirp: true }, (error) => {
+      if (error) {
+        console.log(error)
+        reject(error);
+      }
+      resolve()
+    })
+  });
 
   const { image: { url } } = await imgbbUploader(process.env.IMGBB_API_KEY, path.resolve(newpath))
 
