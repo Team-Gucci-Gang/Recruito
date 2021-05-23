@@ -52,7 +52,7 @@ router.post('/upload', formParser, async (req, res, next) => {
   const newPost = new Post({
     author: req.session.user._id,
     staticUrl: finalLocation,
-    caption: req.body.caption ? marked(req.body.caption) : "",
+    caption: req.body.caption ? marked(req.body.caption) : '',
     category: req.body.type,
     type: mimetype,
     createdAt: new Date(),
@@ -156,8 +156,13 @@ router.get('/job/list', async (req, res, next) => {
     return found
   })
 
+  
+  const userSkills = _.reduce(req.session.user.resume.skills, (prev, curr) => {
+    return [...prev, ..._.map(curr.keywords, (keyword) => keyword.toLowerCase())]
+  }, [])
+
   jobs = _.sortBy(jobs, (job) => {
-    return _.intersection(job.skills, req.session.user.resume.skills).length
+    return -(_.intersection(job.skills, userSkills).length)
   })
 
   jobs = _.each(jobs, (job) => {
@@ -167,7 +172,7 @@ router.get('/job/list', async (req, res, next) => {
   res.render('jobs/index', {
     title: req.app.config.title,
     user: req.session.user,
-    jobs: jobs.reverse()
+    jobs: jobs
   })
 })
 
@@ -239,13 +244,16 @@ router.get('/job/details/:id', async (req, res, next) => {
 
   _.each(job.applications, (application) => {
     const { conscientiousness, extraversion, agreeableness, neuroticism } = application.personality
-    application.matchingSkills = _.intersection(job.skills, _.map(_.union(..._.pluck(application.by.resume.skills, 'keywords')), skill => skill.toLowerCase()))
+    application.matchingSkills = _.intersection(
+      job.skills,
+      _.map(_.union(..._.pluck(application.by.resume.skills, 'keywords')), (skill) => skill.toLowerCase())
+    )
     application.rating = application.matchingSkills.length + conscientiousness + extraversion + agreeableness - neuroticism
   })
 
-  job.applications = _.sortBy(job.applications, application => application.rating).reverse()
+  job.applications = _.sortBy(job.applications, (application) => application.rating).reverse()
 
-  const barChartDataset = _.map(job.applications, application => {
+  const barChartDataset = _.map(job.applications, (application) => {
     return {
       label: application.by.username,
       backgroundColor: getRandomColor(),
